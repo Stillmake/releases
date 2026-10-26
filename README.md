@@ -6,6 +6,7 @@ Notarized builds of Stillmake's macOS apps, and each app's release history.
 |---|---|---|
 | [Actor](https://stillmake.com/actor) | tags `actor-{version}-{build}` | `brew install --cask stillmake/tap/actor` |
 | [Inline](inline/) | tags `inline-{version}-{build}` | `brew install --cask stillmake/tap/inline` |
+| [LocalDictation](localdictation/) | tags `localdictation-{version}-{build}` | `brew install --cask stillmake/tap/localdictation` |
 
 Each release holds the app's DMG. Per app:
 
