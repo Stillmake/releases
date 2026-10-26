@@ -2,7 +2,15 @@
 
 Reference for moving a Stillmake macOS app onto the shared flow: DMGs as GitHub releases on `Stillmake/releases`, history and in-app feed in `<slug>/` there, a cask in `Stillmake/homebrew-tap`, optionally a homepage built from `Stillmake/releases`. Each piece below is independent.
 
-Prerequisites: a notarized DMG, built by the project's own tooling; `Stillmake/releases` and `Stillmake/homebrew-tap` checked out next to the source repo as `../releases` and `../homebrew-tap`.
+## Preconditions
+
+All required; this guide assumes every one holds.
+
+- A notarized DMG holding one `.app`, built by the project's own tooling.
+- `Stillmake/releases` and `Stillmake/homebrew-tap` checked out next to the source repo as `../releases` and `../homebrew-tap`.
+- `gh` signed in, with write access to `Stillmake/releases` and the homepage repo, if any.
+- Git push access to `../releases` and `../homebrew-tap`.
+- `node` and `rg` on `PATH`.
 
 Code: `templates/release.sh`, `templates/RELEASE.md`, `templates/cask.rb`, `scripts/feed.mjs`, `../homebrew-tap/scripts/bump.sh`.
 
