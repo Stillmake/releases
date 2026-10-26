@@ -1,0 +1,42 @@
+[
+  {
+    "version": "0.3.0",
+    "build": 1,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Finds the model in ~/.local/share/LocalDictation on its own, with no folder to choose",
+          "Returns to the No Model screen when the model folder is deleted",
+          "Loads the model on the first request and releases it after 30 idle minutes",
+          "One-line model download with download-model.sh"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "0.2.0",
+    "build": 1,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Launch at Login, starting hidden in the menu bar",
+          "Shorter dictation area"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "0.1.0",
+    "build": 1,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "On-device speech-to-text"
+        ]
+      }
+    ]
+  }
+]
