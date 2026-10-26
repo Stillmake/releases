@@ -1,5 +1,18 @@
 [
   {
+    "version": "2.0.2",
+    "build": 320,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Sidebar commands menu opens on hover",
+          "Close a command's session when it succeeds"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.0.1",
     "build": 314,
     "notes": [

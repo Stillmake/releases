@@ -1,5 +1,19 @@
 [
   {
+    "version": "2.0.2",
+    "build": 320,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Sidebar commands menu opens on hover",
+          "Close a command's session when it succeeds"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.0.2-320/Actor.dmg"
+  },
+  {
     "version": "2.0.1",
     "build": 314,
     "notes": [
@@ -83,25 +97,6 @@
         "title": "Bug Fixes",
         "items": [
           "Escape didn't close some settings sheets"
-        ]
-      }
-    ]
-  },
-  {
-    "version": "1.3.3",
-    "build": 289,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Redesigned sidebar"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "Links could open twice",
-          "Terminal settings ignored in decimal-comma regions"
         ]
       }
     ]
