@@ -1,6 +1,6 @@
-# Onboarding an app
+# Instruction
 
-A prompt for an agent working in an app's source repo. It moves that app onto the shared release flow: notarized DMG on `Stillmake/releases`, history and in-app feed in `<app>/`, Homebrew cask in `Stillmake/homebrew-tap`, and, if the app has one, a homepage rebuilt from this repo.
+A prompt for an agent working in an app's source repo. It moves that app onto the shared release flow, or brings an app already on it back in line after the flow changes: notarized DMG on `Stillmake/releases`, history and in-app feed in `<app>/`, Homebrew cask in `Stillmake/homebrew-tap`, and, if the app has one, a homepage rebuilt from this repo.
 
 Actor is the reference. Copy its shape and change only the names: `Stillmake/ActorTerm` `RELEASE.md` and `scripts/release.sh`, `ActorTerm/Models/UpdateChecker.swift`, `homebrew-tap/Casks/actor.rb`, and `Stillmake/ActorApp` `.github/workflows/deploy.yml` with `_data/release.js`.
 
@@ -8,7 +8,7 @@ Actor is the reference. Copy its shape and change only the names: `Stillmake/Act
 
 ## Prompt
 
-Move this app onto the Stillmake release flow described in `../releases/README.md`. `../releases`, `../homebrew-tap` and `../ActorTerm` are sibling checkouts; read Actor's files listed above before writing anything, and match them.
+Move this app onto the Stillmake release flow described in `../releases/README.md`, or, if it is already on it, bring it level with Actor's current files. For an app already on the flow, do only the steps where it differs from Actor, and skip step 6. `../releases`, `../homebrew-tap` and `../ActorTerm` are sibling checkouts; read Actor's files listed above before writing anything, and match them.
 
 Ask the user for anything below you cannot read from the project, then confirm the whole set once before editing:
 
