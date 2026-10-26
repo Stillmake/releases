@@ -29,7 +29,7 @@ Make a reasonable choice for anything missing and say what you chose. Ask only w
 
 **Release script.** Copy `templates/release.sh` to `scripts/release.sh` (executable) and `templates/RELEASE.md` to `RELEASE.md`. Fill in `__SLUG__`, `__APP__` and `__SITE_REPO__` (empty if there is no site); `CASK` and the DMG path have defaults to override. Trim `RELEASE.md` to what applies.
 
-**Cask.** Write `../homebrew-tap/Casks/<slug>.rb` from `templates/cask.rb`. Its URL only resolves for builds on `Stillmake/releases`, so don't push it before the first release is up. Leave the version and sha256 as they are or as placeholders; the `cask` stage fills them in from the DMG, then commits and pushes. Remove `auto_updates true` if the app has no updater. Without a homepage, use `https://github.com/Stillmake/releases`.
+**Cask.** Write `../homebrew-tap/Casks/<slug>.rb` from `templates/cask.rb`. Its URL only resolves for builds on `Stillmake/releases`, so don't push it before the first release is up. Leave the version and sha256 as they are or as placeholders; the `cask` stage fills them in from the DMG, then commits and pushes. Remove `auto_updates true` if the app has no updater. Homebrew then owns the version, and `brew upgrade` is how users get updates; the cask is the update channel. Without a homepage, use `https://github.com/Stillmake/releases`.
 
 **In-app updater** (if the app has one). Read `https://raw.githubusercontent.com/Stillmake/releases/main/<slug>/version.json`. Decode the changelog shape plus an optional `url`, and download that `url` as-is. Entries without `url` predate this repo and can't be installed.
 
