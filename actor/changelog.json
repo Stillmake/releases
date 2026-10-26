@@ -1,0 +1,580 @@
+[
+  {
+    "version": "2.0.1",
+    "build": 314,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Update check missed new releases",
+          "Voice input failed without saying why",
+          "Recognized speech was lost when dictation failed",
+          "Command button showed as running in every project"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "2.0",
+    "build": 309,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Voice input into the terminal (macOS 26)",
+          "Dictate with a speech API",
+          "Clean up dictation with an LLM",
+          "Customize the sidebar",
+          "Pin a command to all projects"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Command ran twice on double click"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.4.2",
+    "build": 299,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Clear the session note with one click"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Info tab kept using CPU while open"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.4.1",
+    "build": 295,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Command buttons show progress while running",
+          "Reorder command buttons from the right-click menu"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.4.0",
+    "build": 292,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Command bar: save commands as buttons per project",
+          "actorterm CLI for agents (replaces actor-new-session)"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Escape didn't close some settings sheets"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.3.3",
+    "build": 289,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Redesigned sidebar"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Links could open twice",
+          "Terminal settings ignored in decimal-comma regions"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.3.2",
+    "build": 285,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Syntax highlighting for JSON and Swift files",
+          "Markdown highlighting keeps up in long documents"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Line number gutter lost its background when scrolling past the top or bottom"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.3.1",
+    "build": 279,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Open In: add any app and pin up to two to the toolbar",
+          "Status bar: click the branch to copy its name; click the change count to open Git changes",
+          "Notifications show the message first, with two lines when expanded"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.3",
+    "build": 275,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Session notes: dictate with the mic in the note header (macOS 26)",
+          "New tab groups ask for a name first (⌘N)"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.2.3",
+    "build": 273,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Accent color: pick any custom color or follow the system accent"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.2.2",
+    "build": 271,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Open PDFs in a tab, with page jump and zoom",
+          "Play video and audio files in a tab",
+          "Sidebar: Attention keeps every group expanded"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.2.1",
+    "build": 262,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Markdown editor caret landed away from the click"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.2.0",
+    "build": 260,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Hidden files could not be shown in Files",
+          "Markdown front matter dates appeared as headings"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.16",
+    "build": 256,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Info panel: added a bar with Send Keys and Clear Screen"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Fix Clear Screen typing ^L into a running program"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.15",
+    "build": 254,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Fix missing agent icons in the sidebar"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.14",
+    "build": 251,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Info panel: Notifications fold to the three newest"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.13",
+    "build": 249,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Info panel: Jobs is now a table with a header row"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.12",
+    "build": 247,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Sidebar: added a menu with Collapse All, Expand All, and Clear Idle Sessions"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.11",
+    "build": 244,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Session note: Send to Session pastes the note into the terminal and clears it"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Fix missing menu icons on macOS 27"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.10",
+    "build": 242,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Terminal apps now see xterm-ghostty instead of xterm-256color"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.9",
+    "build": 240,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Quit and close confirm before losing unsaved changes, running jobs, or notes",
+          "Sidebar: click Focus again to switch back to All"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Fix blank terminals after closing and reopening a window",
+          "Fix terminals sometimes going blank or the wrong size after a window is reopened"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.6",
+    "build": 230,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Markdown lists: Enter starts the next item; Tab / Shift-Tab indent"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Markdown: Find and Replace works (⌘F / ⌥⌘F)"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.5",
+    "build": 227,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Sidebar: added a Focus filter that shows only the current tab group",
+          "Session note: added the ⌥⌘N shortcut",
+          "App Language: added Simplified Chinese and Traditional Chinese"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.4",
+    "build": 223,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Markdown Preview: hide the syntax so the file reads as formatted text",
+          "Underline for markdown (`__text__`), with a toolbar button"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Shrinking a selection no longer leaves a one-pixel highlight seam"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.3",
+    "build": 215,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "The editor status bar shows the file's added and removed lines since HEAD — click to open its diff"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Undo after typing with an IME (Pinyin and the like) now steps back over the whole word, not each keystroke of the spelling"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.2",
+    "build": 212,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Focus Mode (⌘.): hides the sidebars, toolbar, and status bar so the editor fills the window",
+          "Markdown with a maximum width now has matching top padding"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Toggling Focus Mode no longer scrolls markdown upward or stalls on long files"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.1",
+    "build": 207,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Markdown now supports syntax highlighting, a clickable heading outline in the right sidebar, formatting toolbar buttons, and independent font and theme settings"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.1.0",
+    "build": 206,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Markdown syntax highlighting",
+          "Clickable heading outline in the right sidebar",
+          "Bold / Italic / Strikethrough / Inline Code toolbar buttons for markdown",
+          "Editor settings: independent font, size, line spacing, and theme for editor and markdown, plus markdown max width",
+          "Over-scroll past the last markdown line"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Reloading a file no longer leaves a stale dirty indicator"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.7",
+    "build": 198,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Files open as previews: a single click reuses the current preview tab; a double-click or an edit keeps the file open",
+          "Pin and unpin file tabs from the context menu or the hover button — only pinned tabs are restored when you relaunch",
+          "Split-pane tabs show every pane's icon in the sidebar row; the focused pane is underlined, and clicking an icon focuses it"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "The current-line highlight in the editor gutter no longer covers two rows when the caret sits at the end of a file",
+          "Typing past the last line of a file no longer snaps the scroll — the document's bottom stays where it is instead of jumping to the window"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.6",
+    "build": 192,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Transparent images show a checkerboard background in the image viewer, so their transparent areas are visible"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Text editor opens more file types: files the system labels non-text — like TypeScript and certificate files — and extensionless shebang scripts now open as text; binary property lists open as editable text and save back in their original format",
+          "Find and replace in the text editor works reliably",
+          "Opening a file that is already open in another split no longer splits the wrong pane — it opens a clean new tab"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.5",
+    "build": 187,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Progress bar while the app downloads an update"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Failed update checks retry automatically"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.4",
+    "build": 181,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Line numbers in the file editor, highlighting the current line",
+          "Scroll past the last line of a file, so the bottom of the document can sit in the middle of the window",
+          "Word count in the editor status bar"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Windows (CRLF) files keep their line endings when you edit them — they no longer show every line as changed in git"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.3",
+    "build": 170,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "File editor matches your terminal: the editor takes its colors from the selected terminal theme, so editing sits flush with the terminal beside it — toggle in Settings"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Caret no longer hangs below its line — it is now centered in the text editor",
+          "Fixed a text editor drawing bug with line spacing"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.2",
+    "build": 165,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "In-app updates: install a new version and relaunch right from the update window, with no manual download"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "build": 162,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "? file lookup in the command palette: fuzzy-open any file in the working folder, reveal a directory in the Files panel, or start a session there"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.0",
+    "build": 158,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Ghostty-powered terminal with hierarchical sidebar",
+          "Lightweight",
+          "Native macOS app",
+          "Zero config — works right out of the box"
+        ]
+      }
+    ]
+  }
+]
