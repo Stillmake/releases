@@ -1,40 +1,42 @@
-# Stillmake release flow
+# Stillmake release flow: adopting it
 
-You are working in a Stillmake macOS app's source repo. Move this app onto the shared release flow, or, if it is already on it, bring it level with `templates/`. The flow: notarized DMG on `Stillmake/releases`, history and in-app feed in `<slug>/` there, Homebrew cask in `Stillmake/homebrew-tap`, and, if the app has one, a homepage rebuilt from `Stillmake/releases`.
+Reference for moving a Stillmake macOS app onto the shared release flow. The pieces below are independent: adopt any subset, in any order, and adapt what doesn't fit. When something here doesn't match the project, prefer what the project actually does, note the difference, and keep going.
 
-`../releases` (this repo) and `../homebrew-tap` are sibling checkouts of the source repo. Everything you need is in them; do not look for, or ask about, any other app's repo. Read first:
+The flow: notarized DMGs as GitHub releases on `Stillmake/releases`, history and in-app feed in `<slug>/` there, a Homebrew cask in `Stillmake/homebrew-tap`, and optionally a homepage built from `Stillmake/releases`. `../releases` and `../homebrew-tap` are checked out next to the source repo.
 
-- `../releases/README.md`
-- `../releases/templates/release.sh`, `RELEASE.md`, `cask.rb`
-- `../releases/scripts/feed.mjs`
-- `../homebrew-tap/scripts/bump.sh`
+Code to read: `templates/release.sh` (the stages), `templates/RELEASE.md` (the per-app page), `templates/cask.rb`, `scripts/feed.mjs`, `../homebrew-tap/scripts/bump.sh`.
 
-## Inputs
+## The only hard rule
 
-Read these from the project; ask the user only for what it cannot tell you, then confirm the whole set once before editing:
+Nothing points at a DMG until it is published: not the feed, the cask, or the site. `release.sh` enforces this. Everything else, including names, paths and stages, is a default.
 
-- **App name**: the `.app` and `.dmg` basename (the product name).
-- **slug**: the app name lowercased. It names `../releases/<slug>/`, the tag prefix `<slug>-{version}-{build}`, and the cask `Casks/<slug>.rb`.
-- **Bundle identifier** and **minimum macOS**, from the build settings.
-- **Homepage repo**: optional; many apps have none. Look for an existing cask's `homepage` or a site link in the project before asking.
-- **Legacy channel**: the feed URL and download URL pattern shipped builds use today, from the app's current update checker or existing cask; none if there is neither.
+## Inputs, with defaults
 
-For an app already on the flow, do only the steps where it differs from `templates/`, and skip step 6.
+| Input | Default | Where to look |
+|---|---|---|
+| App name | product name | `PRODUCT_NAME`, the DMG's `.app` |
+| slug | app name, lowercased | names `<slug>/`, tags `<slug>-{version}-{build}`, the cask |
+| Bundle ID, min macOS | — | Release build settings, or the DMG's Info.plist |
+| Homepage repo | none | a site link in the project; a cask `homepage` that is a GitHub repo is not a site |
+| History | none | a legacy feed or existing GitHub releases with notes; source tags and casks carry no notes |
+| Legacy updater feed | none | the app's current update checker |
 
-## Steps
+Make a reasonable choice for anything missing and say what you chose. Ask only when the choice would publish something the user can't take back.
 
-1. **History.** Create `../releases/<slug>/changelog.json`: every past release, newest first, each `{ "version", "build", "notes": [{ "title", "items" }] }`, copied from the legacy feed or GitHub releases. Do not invent versions. Do not write `version.json`; `scripts/feed.mjs` generates it at the first release. Add the app's row to the table in `../releases/README.md`.
+## Pieces
 
-2. **In-app updater.** Point the app's update check at `https://raw.githubusercontent.com/Stillmake/releases/main/<slug>/version.json`. Decode the `changelog.json` shape plus an optional `url`, and download that `url` as-is; never build a download path. An entry without `url` predates `Stillmake/releases` and is never offered for install. If the app has no updater, skip this and say so.
+**History.** Copy any existing history into `<slug>/changelog.json`, newest first: `{ "version", "build", "notes": [{ "title", "items" }] }`. Don't invent entries. With no history, the first release's entry starts the file. Add a row to `README.md`. `version.json` is generated, never hand-written.
 
-3. **Release script.** Copy `templates/release.sh` to `scripts/release.sh` (executable) and `templates/RELEASE.md` to `RELEASE.md`, filling `__SLUG__`, `__APP__` and `__SITE_REPO__` (empty without a homepage). Without a homepage, also drop the homepage lines from `RELEASE.md`.
+**Release script.** Copy `templates/release.sh` to `scripts/release.sh` (executable) and `templates/RELEASE.md` to `RELEASE.md`. Fill in `__SLUG__`, `__APP__` and `__SITE_REPO__` (empty if there is no site); `CASK` and the DMG path have defaults to override. Trim `RELEASE.md` to what applies.
 
-4. **Cask.** Create or rewrite `../homebrew-tap/Casks/<slug>.rb` from `templates/cask.rb`. Fill version, build and sha256 with the build currently shipped; `bump.sh` maintains them from then on. Without a homepage, `homepage` is `https://github.com/Stillmake/releases`. Drop `auto_updates true` when the app has no updater.
+**Cask.** Write `../homebrew-tap/Casks/<slug>.rb` from `templates/cask.rb`. Its URL only resolves for builds on `Stillmake/releases`, so don't push it before the first release is up. Leave the version and sha256 as they are or as placeholders; the `cask` stage fills them in from the DMG, then commits and pushes. Remove `auto_updates true` if the app has no updater. Without a homepage, use `https://github.com/Stillmake/releases`.
 
-5. **Homepage (optional).** In the homepage repo, read release data from `$RELEASES_DIR/<slug>/` (a sibling checkout locally, a second `actions/checkout` of `Stillmake/releases` into `.releases` in CI) instead of its own copy, and give its `deploy.yml` workflow `workflow_dispatch` so `release.sh` can trigger it. Remove the copy only once the site builds from `Stillmake/releases`.
+**In-app updater** (if the app has one). Read `https://raw.githubusercontent.com/Stillmake/releases/main/<slug>/version.json`. Decode the changelog shape plus an optional `url`, and download that `url` as-is. Entries without `url` predate this repo and can't be installed.
 
-6. **Bridge (only with a legacy channel).** Builds already shipped read the old feed and will never see `Stillmake/releases`. The first release whose updater reads `Stillmake/releases` must also be published on the legacy channel, once, by hand: the same DMG under the legacy download pattern, and its entry at the top of the legacy feed. Do not add this to `release.sh`. Keep the legacy feed and its releases afterwards; old installs still read them.
+**Homepage** (if any). Build from `$RELEASES_DIR/<slug>/`: a sibling checkout locally, or a second `actions/checkout` of `Stillmake/releases` in CI. Give `deploy.yml` a `workflow_dispatch` trigger.
 
-## Handover
+**Bridge** (only when shipped builds read a legacy update feed). Shipped builds never see `Stillmake/releases`. Once, by hand, publish the first build whose updater reads the new feed on the legacy channel too. Keep the legacy feed afterwards.
 
-Do not publish anything. Leave every repo with uncommitted or committed-but-unpushed changes, list them per repo, and tell the user the next release is `./scripts/release.sh` per the new `RELEASE.md`, plus step 6 if it applies.
+## Releasing
+
+Follow `RELEASE.md` and run `./scripts/release.sh`. Stages are idempotent, so after a failure, fix the cause and re-run the `--only` command the script prints.
