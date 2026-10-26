@@ -1,0 +1,108 @@
+[
+  {
+    "version": "2.0.1",
+    "build": 314,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Update check missed new releases",
+          "Voice input failed without saying why",
+          "Recognized speech was lost when dictation failed",
+          "Command button showed as running in every project"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "2.0",
+    "build": 309,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Voice input into the terminal (macOS 26)",
+          "Dictate with a speech API",
+          "Clean up dictation with an LLM",
+          "Customize the sidebar",
+          "Pin a command to all projects"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Command ran twice on double click"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.4.2",
+    "build": 299,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Clear the session note with one click"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Info tab kept using CPU while open"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.4.1",
+    "build": 295,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Command buttons show progress while running",
+          "Reorder command buttons from the right-click menu"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.4.0",
+    "build": 292,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Command bar: save commands as buttons per project",
+          "actorterm CLI for agents (replaces actor-new-session)"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Escape didn't close some settings sheets"
+        ]
+      }
+    ]
+  },
+  {
+    "version": "1.3.3",
+    "build": 289,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Redesigned sidebar"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Links could open twice",
+          "Terminal settings ignored in decimal-comma regions"
+        ]
+      }
+    ]
+  }
+]
