@@ -70,7 +70,7 @@ echo "$APP_NAME $VERSION ($BUILD) → $TAG [${(j:, :)STAGES}]"
 # newest entry is not it.
 entry_markdown() {
   [[ -f "$CHANGELOG" ]] || { echo "Error: no $CHANGELOG" >&2; return 1; }
-  node -e '
+  bun -e '
     const [entry] = require(process.argv[1]);
     if (`${entry.version} (${entry.build})` !== process.argv[2]) {
       console.error(`Error: changelog.json leads with ${entry.version} (${entry.build}), not ${process.argv[2]}.`);
@@ -119,7 +119,7 @@ require_published() {
 stage_feed() {
   require_published feed || return 1
   entry_markdown >/dev/null || return 1
-  node "$RELEASES_DIR/scripts/feed.mjs" "$SLUG" "$ASSET" || return 1
+  bun "$RELEASES_DIR/scripts/feed.mjs" "$SLUG" "$ASSET" || return 1
   git -C "$RELEASES_DIR" add -- "$SLUG" || return 1
   if git -C "$RELEASES_DIR" diff --cached --quiet -- "$SLUG"; then
     echo "feed: $SLUG is already committed."

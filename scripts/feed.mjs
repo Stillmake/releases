@@ -5,7 +5,7 @@
 // before this repo existed get none. With --check, fails when the
 // committed feed is not what the changelog produces.
 //
-// Usage: node scripts/feed.mjs <app> <asset> [--check]
+// Usage: bun scripts/feed.mjs <app> <asset> [--check]
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url";
 const repo = "Stillmake/releases";
 const [app, asset] = process.argv.slice(2).filter((arg) => !arg.startsWith("--"));
 if (!app || !asset) {
-  console.error("Usage: node scripts/feed.mjs <app> <asset> [--check]");
+  console.error("Usage: bun scripts/feed.mjs <app> <asset> [--check]");
   process.exit(1);
 }
 const appDir = join(dirname(fileURLToPath(import.meta.url)), "..", app);

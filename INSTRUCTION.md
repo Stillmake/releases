@@ -10,7 +10,7 @@ All required; this guide assumes every one holds.
 - `Stillmake/releases` and `Stillmake/homebrew-tap` checked out next to the source repo as `../releases` and `../homebrew-tap`.
 - `gh` signed in, with write access to `Stillmake/releases` and the homepage repo, if any.
 - Git push access to `../releases` and `../homebrew-tap`.
-- `node` and `rg` on `PATH`.
+- `bun` and `rg` on `PATH`.
 
 Code: `templates/release.sh`, `templates/RELEASE.md`, `templates/cask.rb`, `scripts/feed.mjs`, `../homebrew-tap/scripts/bump.sh`.
 
