@@ -1,0 +1,19 @@
+[
+  {
+    "version": "1.0",
+    "build": 29,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Floating notification cards triggered from the moof:// URL scheme or the moof command line tool",
+          "Default, Elden Ring, Mario and Hollow Knight themes, chosen in the menu or per notification",
+          "Cards persist until dismissed and report results back to the CLI",
+          "Install the CLI from the menu bar, or copy a prompt that teaches an AI agent to use it",
+          "Open at login"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/moof-1.0-29/Moof.dmg"
+  }
+]
