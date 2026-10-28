@@ -1,5 +1,25 @@
 [
   {
+    "version": "2.1",
+    "build": 332,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Sync settings across your Macs with Stillmake Cloud",
+          "Sidebar shows when an agent is working, waiting for you, or done"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Command session stayed open after the command succeeded"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.1-332/Actor.dmg"
+  },
+  {
     "version": "2.0.2",
     "build": 320,
     "notes": [
@@ -78,25 +98,6 @@
         "items": [
           "Command buttons show progress while running",
           "Reorder command buttons from the right-click menu"
-        ]
-      }
-    ]
-  },
-  {
-    "version": "1.4.0",
-    "build": 292,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Command bar: save commands as buttons per project",
-          "actorterm CLI for agents (replaces actor-new-session)"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "Escape didn't close some settings sheets"
         ]
       }
     ]
