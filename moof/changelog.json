@@ -1,5 +1,17 @@
 [
   {
+    "version": "1.0.1",
+    "build": 34,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "The moof command line tool no longer fails with \"executable is missing\" when run from Terminal"
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.0",
     "build": 29,
     "notes": [
