@@ -1,5 +1,18 @@
 [
   {
+    "version": "2.1.1",
+    "build": 24,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Text field wasn't focused when opening the panel with nothing selected"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/inline-2.1.1-24/Inline.dmg"
+  },
+  {
     "version": "2.1",
     "build": 21,
     "notes": [

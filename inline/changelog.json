@@ -1,5 +1,17 @@
 [
   {
+    "version": "2.1.1",
+    "build": 24,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Text field wasn't focused when opening the panel with nothing selected"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.1",
     "build": 21,
     "notes": [
