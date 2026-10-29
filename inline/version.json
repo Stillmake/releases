@@ -1,5 +1,28 @@
 [
   {
+    "version": "2.1",
+    "build": 21,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Web search for any model, using your DeepSeek API key",
+          "Search results appear in the chat with clickable links",
+          "Hold ⌘ over a search to copy its query or results",
+          "Expand tool cards by clicking anywhere on their title row",
+          "New providers start with the catalog's API endpoint filled in"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Commands kept running after quitting or stopping a reply"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/inline-2.1-21/Inline.dmg"
+  },
+  {
     "version": "2.0.2",
     "build": 18,
     "notes": [
