@@ -1,5 +1,20 @@
 [
   {
+    "version": "2.1.1",
+    "build": 340,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Snippets with placeholders, inserted from the Info panel",
+          "Sync snippets across your Macs",
+          "Rewrite a note's selection with an LLM",
+          "Use the LLM filter on notes before macOS 26"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.1",
     "build": 332,
     "notes": [
