@@ -8,6 +8,7 @@ Notarized builds of Stillmake's macOS apps, and each app's release history.
 | [Inline](inline/) | tags `inline-{version}-{build}` | `brew install --cask stillmake/tap/inline` |
 | [LocalDictation](localdictation/) | tags `localdictation-{version}-{build}` | `brew install --cask stillmake/tap/localdictation` |
 | [Moof](moof/) | tags `moof-{version}-{build}` | `brew install --cask stillmake/tap/moof` |
+| [OwoX](owox/) | tags `owox-{version}-{build}` | `brew install --cask stillmake/tap/owox` |
 
 Each release holds the app's DMG. Per app:
 
