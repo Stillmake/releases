@@ -1,5 +1,23 @@
 [
   {
+    "version": "2.2",
+    "build": 347,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Turn off tab groups to keep every tab in one list",
+          "Show each tab's path under its title when tab groups are off",
+          "Sort the tab list by name, type, folder, or last used",
+          "Focus shows the tabs in the current folder and its subfolders",
+          "New tabs open next to the tab they came from",
+          "Sidebar shows when sync moves something",
+          "Sync carries prompts and snippets only; themes, fonts, and layout stay on each Mac"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.1.1",
     "build": 340,
     "notes": [
