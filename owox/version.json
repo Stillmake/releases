@@ -1,0 +1,24 @@
+[
+  {
+    "version": "1.0.3",
+    "build": 9,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Block ads and trackers with built-in and custom block lists, with an allow list for sites that break",
+          "See which domains were blocked and by which list"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Inactive subscriptions no longer refresh in the background",
+          "The core log is readable again while TUN mode is on",
+          "Updating the TUN service no longer leaves a spare copy of the core taking up disk space"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/owox-1.0.3-9/OwoX.dmg"
+  }
+]
