@@ -1,5 +1,28 @@
 [
   {
+    "version": "2.2.1",
+    "build": 354,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Program status changes from agents appear in the Info panel's notifications",
+          "Choose which notification types and agent states send a desktop banner (Info panel ▸ Notifications ▸ gear)",
+          "Choose whether banners show while the session is focused",
+          "Action button runs get their own sidebar filter"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Action button sessions no longer show up in the command palette or the attention count",
+          "Move to tab group menu no longer appears when tab groups are off"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.2.1-354/Actor.dmg"
+  },
+  {
     "version": "2.2",
     "build": 347,
     "notes": [
@@ -83,27 +106,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.0.1-314/Actor.dmg"
-  },
-  {
-    "version": "2.0",
-    "build": 309,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Voice input into the terminal (macOS 26)",
-          "Dictate with a speech API",
-          "Clean up dictation with an LLM",
-          "Customize the sidebar",
-          "Pin a command to all projects"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "Command ran twice on double click"
-        ]
-      }
-    ]
   }
 ]

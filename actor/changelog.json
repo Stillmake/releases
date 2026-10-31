@@ -1,5 +1,27 @@
 [
   {
+    "version": "2.2.1",
+    "build": 354,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Program status changes from agents appear in the Info panel's notifications",
+          "Choose which notification types and agent states send a desktop banner (Info panel ▸ Notifications ▸ gear)",
+          "Choose whether banners show while the session is focused",
+          "Action button runs get their own sidebar filter"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Action button sessions no longer show up in the command palette or the attention count",
+          "Move to tab group menu no longer appears when tab groups are off"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.2",
     "build": 347,
     "notes": [
