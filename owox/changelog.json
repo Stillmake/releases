@@ -1,5 +1,23 @@
 [
   {
+    "version": "1.0.4",
+    "build": 14,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "A reloaded subscription keeps the node you picked, and when that name is gone it chooses the closest match instead of falling back to Direct"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Menu bar icons no longer shift when an item is checked"
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.0.3",
     "build": 9,
     "notes": [
