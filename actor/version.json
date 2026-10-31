@@ -1,7 +1,7 @@
 [
   {
     "version": "2.2.1",
-    "build": 354,
+    "build": 355,
     "notes": [
       {
         "title": "New Features",
@@ -9,18 +9,21 @@
           "Program status changes from agents appear in the Info panel's notifications",
           "Choose which notification types and agent states send a desktop banner (Info panel ▸ Notifications ▸ gear)",
           "Choose whether banners show while the session is focused",
-          "Action button runs get their own sidebar filter"
+          "Action button runs get their own sidebar filter",
+          "Restore a snippet to its saved version while editing"
         ]
       },
       {
         "title": "Bug Fixes",
         "items": [
           "Action button sessions no longer show up in the command palette or the attention count",
-          "Move to tab group menu no longer appears when tab groups are off"
+          "Move to tab group menu no longer appears when tab groups are off",
+          "Snippets list no longer starts expanded in every session",
+          "Notification settings and program status are now translated into Chinese"
         ]
       }
     ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.2.1-354/Actor.dmg"
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.2.1-355/Actor.dmg"
   },
   {
     "version": "2.2",
