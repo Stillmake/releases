@@ -1,5 +1,27 @@
 [
   {
+    "version": "2.3",
+    "build": 373,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Compact toolbar on macOS 27 puts the window controls and tabs in one slim bar (Settings ▸ General ▸ Compact Toolbar)",
+          "Pick a tab from a horizontal tab strip, with rename, reveal in Finder, copy path, and close actions in its menu",
+          "File viewer can follow the terminal theme",
+          "Action button sessions are named after the button's title or command",
+          "Dictation keeps the last words spoken just before you stop; silent recordings are no longer sent for transcription"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "⌘1–⌘9 now switch between the panes the sidebar filter shows"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.2.1",
     "build": 355,
     "notes": [
