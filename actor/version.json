@@ -1,5 +1,29 @@
 [
   {
+    "version": "2.4",
+    "build": 388,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Float the session note over the workspace",
+          "Apply the LLM filter to selected note text from the note header",
+          "Search for snippets and action buttons in the command palette",
+          "Find action button sessions in the tab menu"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "LLM filter failures no longer silently deliver unfiltered text",
+          "Markdown links no longer hide adjacent text",
+          "Command palette search no longer matches letters scattered across long snippets"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.4-388/Actor.dmg"
+  },
+  {
     "version": "2.3",
     "build": 373,
     "notes": [
@@ -102,19 +126,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.1-332/Actor.dmg"
-  },
-  {
-    "version": "2.0.2",
-    "build": 320,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Sidebar commands menu opens on hover",
-          "Close a command's session when it succeeds"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.0.2-320/Actor.dmg"
   }
 ]
