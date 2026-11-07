@@ -1,5 +1,30 @@
 [
   {
+    "version": "2.5",
+    "build": 399,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Set a preferred workspace for each tab group",
+          "Set or clear a tab group’s workspace with `actorterm set-workspace`",
+          "Syntax highlighting for Python and shell scripts",
+          "Select split panes from their redesigned sidebar header",
+          "Reveal files in Finder or copy their paths from split-pane menus"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Keystrokes no longer get lost when the command palette closes",
+          "Command palette actions no longer run twice",
+          "Window dragging between displays is more reliable",
+          "Text fields no longer apply unwanted automatic substitutions"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.4",
     "build": 388,
     "notes": [

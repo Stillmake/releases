@@ -1,5 +1,31 @@
 [
   {
+    "version": "2.5",
+    "build": 399,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Set a preferred workspace for each tab group",
+          "Set or clear a tab group’s workspace with `actorterm set-workspace`",
+          "Syntax highlighting for Python and shell scripts",
+          "Select split panes from their redesigned sidebar header",
+          "Reveal files in Finder or copy their paths from split-pane menus"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Keystrokes no longer get lost when the command palette closes",
+          "Command palette actions no longer run twice",
+          "Window dragging between displays is more reliable",
+          "Text fields no longer apply unwanted automatic substitutions"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.5-399/Actor.dmg"
+  },
+  {
     "version": "2.4",
     "build": 388,
     "notes": [
@@ -106,25 +132,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.1.1-340/Actor.dmg"
-  },
-  {
-    "version": "2.1",
-    "build": 332,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Sync settings across your Macs with Stillmake Cloud",
-          "Sidebar shows when an agent is working, waiting for you, or done"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "Command session stayed open after the command succeeded"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.1-332/Actor.dmg"
   }
 ]
