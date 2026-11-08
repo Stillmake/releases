@@ -1,5 +1,23 @@
 [
   {
+    "version": "2.6",
+    "build": 406,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Use the terminal theme throughout the app"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Image controls no longer jump when switching images"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.5",
     "build": 399,
     "notes": [
