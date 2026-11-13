@@ -1,5 +1,25 @@
 [
   {
+    "version": "2.7.1",
+    "build": 417,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Focus is hidden from the sidebar when tab groups are off",
+          "The Other filter appears only when files or diffs are open"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "The Other filter returns to All after its last file or diff closes",
+          "The divider beside the inspector remains visible in full screen"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.6",
     "build": 406,
     "notes": [

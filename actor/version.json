@@ -1,5 +1,26 @@
 [
   {
+    "version": "2.7.1",
+    "build": 417,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Focus is hidden from the sidebar when tab groups are off",
+          "The Other filter appears only when files or diffs are open"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "The Other filter returns to All after its last file or diff closes",
+          "The divider beside the inspector remains visible in full screen"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.7.1-417/Actor.dmg"
+  },
+  {
     "version": "2.6",
     "build": 406,
     "notes": [
@@ -116,24 +137,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.2.1-355/Actor.dmg"
-  },
-  {
-    "version": "2.2",
-    "build": 347,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Turn off tab groups to keep every tab in one list",
-          "Show each tab's path under its title when tab groups are off",
-          "Sort the tab list by name, type, folder, or last used",
-          "Focus shows the tabs in the current folder and its subfolders",
-          "New tabs open next to the tab they came from",
-          "Sidebar shows when sync moves something",
-          "Sync carries prompts and snippets only; themes, fonts, and layout stay on each Mac"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.2-347/Actor.dmg"
   }
 ]
