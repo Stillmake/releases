@@ -1,5 +1,26 @@
 [
   {
+    "version": "1.1",
+    "build": 37,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Mirror notifications to WeChat after scanning a QR code in the menu bar",
+          "Choose from the menu bar whether notifications are also delivered to WeChat",
+          "Remember the WeChat pairing across Moof restarts",
+          "Restore WeChat delivery after inactivity without scanning another QR code"
+        ]
+      },
+      {
+        "title": "Changes",
+        "items": [
+          "The App Store build uses moof:// URLs instead of installing the command-line tool"
+        ]
+      }
+    ]
+  },
+  {
     "version": "1.0.1",
     "build": 34,
     "notes": [
