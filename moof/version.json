@@ -1,5 +1,25 @@
 [
   {
+    "version": "1.1.2",
+    "build": 42,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "WeChat delivery now preserves pending notifications and retries them after the conversation becomes active again"
+        ]
+      },
+      {
+        "title": "Changes",
+        "items": [
+          "Moof shows a warning card when WeChat requires a new message from the connected account",
+          "The warning card's action opens Moof's WeChat settings window"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/moof-1.1.2-42/Moof.dmg"
+  },
+  {
     "version": "1.1.1",
     "build": 40,
     "notes": [
