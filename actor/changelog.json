@@ -1,5 +1,26 @@
 [
   {
+    "version": "2.8",
+    "build": 439,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "A dedicated Git workspace with history, changes, branches, tags, stashes, and diffs",
+          "Filter the sidebar by Git tabs and open Git from the command palette",
+          "Right-click changed files to edit, reveal in Finder, or copy their paths",
+          "Updated terminal themes and LLM model support"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Improved Git state handling and localization across the app"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.7.1",
     "build": 417,
     "notes": [
