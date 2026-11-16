@@ -1,5 +1,28 @@
 [
   {
+    "version": "2.8.1",
+    "build": 454,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Search terminal scrollback with live result counts and next or previous navigation",
+          "Generate commit messages from staged changes",
+          "Group Git branches by prefix and choose which branches appear in history",
+          "See line counts for each changed file"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Improve Git history visibility for detached HEADs and shallow files",
+          "Reduce Git history flicker and make diff loading more reliable"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8.1-454/Actor.dmg"
+  },
+  {
     "version": "2.8",
     "build": 439,
     "notes": [
@@ -110,28 +133,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.4-388/Actor.dmg"
-  },
-  {
-    "version": "2.3",
-    "build": 373,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Compact toolbar on macOS 27 puts the window controls and tabs in one slim bar (Settings ▸ General ▸ Compact Toolbar)",
-          "Pick a tab from a horizontal tab strip, with rename, reveal in Finder, copy path, and close actions in its menu",
-          "File viewer can follow the terminal theme",
-          "Action button sessions are named after the button's title or command",
-          "Dictation keeps the last words spoken just before you stop; silent recordings are no longer sent for transcription"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "⌘1–⌘9 now switch between the panes the sidebar filter shows"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.3-373/Actor.dmg"
   }
 ]
