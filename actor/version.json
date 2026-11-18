@@ -1,5 +1,28 @@
 [
   {
+    "version": "2.8.2",
+    "build": 466,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Stage and unstage individual hunks in the Git changes list",
+          "View diffs side by side and toggle full-file context",
+          "Drag tabs between groups and reorder groups in the sidebar",
+          "Run stash actions from the Git history context menu"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Keep the titlebar background correct in compact mode",
+          "Show newly created stashes immediately and label stashes by their short OID"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8.2-466/Actor.dmg"
+  },
+  {
     "version": "2.8.1",
     "build": 454,
     "notes": [
@@ -109,29 +132,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.5-399/Actor.dmg"
-  },
-  {
-    "version": "2.4",
-    "build": 388,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Float the session note over the workspace",
-          "Apply the LLM filter to selected note text from the note header",
-          "Search for snippets and action buttons in the command palette",
-          "Find action button sessions in the tab menu"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "LLM filter failures no longer silently deliver unfiltered text",
-          "Markdown links no longer hide adjacent text",
-          "Command palette search no longer matches letters scattered across long snippets"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.4-388/Actor.dmg"
   }
 ]
