@@ -1,5 +1,30 @@
 [
   {
+    "version": "2.8.3",
+    "build": 477,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Continue, skip, or abort paused merges, rebases, cherry-picks, reverts, and patch applications from the Git page",
+          "Shift-click commits to inspect their combined changes",
+          "Show binary file sizes in Git changes",
+          "Show progress while Git actions run",
+          "Recognize Gemini, Copilot, Qwen, and Kimi with brand marks",
+          "Open the Git tab with Option-Command-G"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Keep tab group disclosure chevrons visible at the trailing edge",
+          "Center empty and error messages in diff views"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8.3-477/Actor.dmg"
+  },
+  {
     "version": "2.8.2",
     "build": 466,
     "notes": [
@@ -106,31 +131,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.6-406/Actor.dmg"
-  },
-  {
-    "version": "2.5",
-    "build": 399,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Set a preferred workspace for each tab group",
-          "Set or clear a tab group’s workspace with `actorterm set-workspace`",
-          "Syntax highlighting for Python and shell scripts",
-          "Select split panes from their redesigned sidebar header",
-          "Reveal files in Finder or copy their paths from split-pane menus"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "Keystrokes no longer get lost when the command palette closes",
-          "Command palette actions no longer run twice",
-          "Window dragging between displays is more reliable",
-          "Text fields no longer apply unwanted automatic substitutions"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.5-399/Actor.dmg"
   }
 ]
