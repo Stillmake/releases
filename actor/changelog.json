@@ -1,5 +1,27 @@
 [
   {
+    "version": "2.8.5",
+    "build": 488,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Show Antigravity task titles in terminal tabs",
+          "Show the active AI agent sooner after launching it from a shell",
+          "Squash a commit into its parent from Git history",
+          "Fetch directly from the Git toolbar",
+          "Git history and branch controls use a tighter layout"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Editing a commit message no longer stalls on long histories"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.8.4",
     "build": 481,
     "notes": [

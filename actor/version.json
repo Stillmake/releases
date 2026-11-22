@@ -1,5 +1,28 @@
 [
   {
+    "version": "2.8.5",
+    "build": 488,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Show Antigravity task titles in terminal tabs",
+          "Show the active AI agent sooner after launching it from a shell",
+          "Squash a commit into its parent from Git history",
+          "Fetch directly from the Git toolbar",
+          "Git history and branch controls use a tighter layout"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Editing a commit message no longer stalls on long histories"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8.5-488/Actor.dmg"
+  },
+  {
     "version": "2.8.4",
     "build": 481,
     "notes": [
@@ -111,26 +134,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8-439/Actor.dmg"
-  },
-  {
-    "version": "2.7.1",
-    "build": 417,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "Focus is hidden from the sidebar when tab groups are off",
-          "The Other filter appears only when files or diffs are open"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "The Other filter returns to All after its last file or diff closes",
-          "The divider beside the inspector remains visible in full screen"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.7.1-417/Actor.dmg"
   }
 ]
