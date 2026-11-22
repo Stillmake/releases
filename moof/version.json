@@ -1,5 +1,25 @@
 [
   {
+    "version": "1.1.3",
+    "build": 47,
+    "notes": [
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "WeChat notifications keep their conversation context current while mirroring is enabled",
+          "Notifications no longer get stuck behind a failed WeChat send"
+        ]
+      },
+      {
+        "title": "Changes",
+        "items": [
+          "WeChat rate limiting now backs off and retries automatically"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/moof-1.1.3-47/Moof.dmg"
+  },
+  {
     "version": "1.1.2",
     "build": 42,
     "notes": [
