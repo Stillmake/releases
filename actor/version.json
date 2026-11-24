@@ -1,5 +1,33 @@
 [
   {
+    "version": "2.8.6",
+    "build": 504,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Compare images side by side in binary diffs",
+          "Filter commit and range diffs by file type",
+          "Git diff controls use a capsule segmented control",
+          "Send a note to a session with ⌘⏎ or from the editor’s context menu",
+          "Sending a note focuses that session’s terminal",
+          "The app tint follows the terminal theme’s blue",
+          "Filter terminal themes by light or dark appearance"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Opening a file from Git no longer opens a duplicate tab",
+          "Dictation no longer records from a stale input device",
+          "Text on tinted controls stays readable in light and dark appearance",
+          "Clearing the terminal theme search returns to the selected theme"
+        ]
+      }
+    ],
+    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8.6-504/Actor.dmg"
+  },
+  {
     "version": "2.8.5",
     "build": 488,
     "notes": [
@@ -112,27 +140,5 @@
       }
     ],
     "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8.1-454/Actor.dmg"
-  },
-  {
-    "version": "2.8",
-    "build": 439,
-    "notes": [
-      {
-        "title": "New Features",
-        "items": [
-          "A dedicated Git workspace with history, changes, branches, tags, stashes, and diffs",
-          "Filter the sidebar by Git tabs and open Git from the command palette",
-          "Right-click changed files to edit, reveal in Finder, or copy their paths",
-          "Updated terminal themes and LLM model support"
-        ]
-      },
-      {
-        "title": "Bug Fixes",
-        "items": [
-          "Improved Git state handling and localization across the app"
-        ]
-      }
-    ],
-    "url": "https://github.com/Stillmake/releases/releases/download/actor-2.8-439/Actor.dmg"
   }
 ]

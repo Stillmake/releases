@@ -1,5 +1,32 @@
 [
   {
+    "version": "2.8.6",
+    "build": 504,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Compare images side by side in binary diffs",
+          "Filter commit and range diffs by file type",
+          "Git diff controls use a capsule segmented control",
+          "Send a note to a session with ⌘⏎ or from the editor’s context menu",
+          "Sending a note focuses that session’s terminal",
+          "The app tint follows the terminal theme’s blue",
+          "Filter terminal themes by light or dark appearance"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Opening a file from Git no longer opens a duplicate tab",
+          "Dictation no longer records from a stale input device",
+          "Text on tinted controls stays readable in light and dark appearance",
+          "Clearing the terminal theme search returns to the selected theme"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.8.5",
     "build": 488,
     "notes": [
