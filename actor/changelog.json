@@ -1,5 +1,29 @@
 [
   {
+    "version": "2.9.0",
+    "build": 513,
+    "notes": [
+      {
+        "title": "New Features",
+        "items": [
+          "Show one full image for an unchanged image rename",
+          "Scroll terminals more smoothly with a trackpad",
+          "Use the latest AI provider and model catalog",
+          "Git tabs no longer reopen after restarting the app",
+          "Git tabs use matching icons in the sidebar",
+          "Working Folder paths omit the diamond marker in the sidebar, status bar, and Settings",
+          "Tab groups have more space between sections"
+        ]
+      },
+      {
+        "title": "Bug Fixes",
+        "items": [
+          "Merged branches keep every parent line in filtered and searched Git histories"
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.8.6",
     "build": 504,
     "notes": [
